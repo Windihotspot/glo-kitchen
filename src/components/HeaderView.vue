@@ -4,10 +4,16 @@
    
   >
     <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <img src="../assets/glo-kitchen.jpg" alt="Glo kitchen Logo" class="w-10 h-10 rounded-full" />
-      <span class="font-semibold text-black text-lg">Glo Kitchen</span>
-    </div>
+  <div class="flex items-center space-x-2">
+  <img src="../assets/glo-kitchen.jpg" alt="Glo kitchen Logo" class="w-10 h-10 rounded-full" />
+
+  <!-- Text stacked vertically -->
+  <div class="flex flex-col leading-tight">
+    <span class="font-semibold text-black text-lg">Glo Kitchen</span>
+    <span class="font-light text-black text-sm -mt-1">Intercontinental takeaway food</span>
+  </div>
+</div>
+
 
     <!-- Desktop Nav -->
     <nav class="hidden lg:flex items-center space-x-8 text-black font-medium">

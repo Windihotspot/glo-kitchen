@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "name": "Coke and Fanta",
+    "price": 2.20,
+    "currency": "€",
+    "image": "https://toppng.com/uploads/preview/fanta-food-png-free-11667343744aaeokoh60g.png",
+    "rating": 5,
+    "reviews": 112,
+    "category": "drinks"
+  },
+  {
+    "id": 2,
+    "name": "Bottle Water",
+    "price": 1.90,
+    "currency": "€",
+    "image": "https://images.openfoodfacts.org/images/products/539/154/524/0026/front_en.3.full.jpg",
+    "rating": 5,
+    "reviews": 142,
+    "category": "drinks"
+  },
+  {
+    "id": 3,
+    "name": "Jollof rice and chicken or beef",
+    "price": 12.00,
+    "currency": "€",
+    "image": "https://images.unsplash.com/photo-1603496987674-79600a000f55?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMHJpY2V8ZW58MHx8MHx8fDA%3D",
+    "rating": 4,
+    "reviews": 123,
+    "category": "meals"
+  },
+  {
+    "id": 4,
+    "name": "Chicken curry sauce and white rice",
+    "price": 10.00,
+    "smallPrice": 7.00,
+    "currency": "€",
+    "image": "https://cdn.pixabay.com/photo/2023/06/02/19/36/ai-generated-8036274_1280.png",
+    "rating": 5,
+    "reviews": 152,
+    "category": "meals"
+  },
+   {
+    "id": 3,
+    "name": "Fried rice and chicken or beef",
+    "price": 12.00,
+    "currency": "€",
+    "image": "https://cdn.pixabay.com/photo/2021/06/02/01/36/rice-6303122_640.jpg",
+    "rating": 4,
+    "reviews": 123,
+    "category": "meals"
+  }
+]

@@ -102,37 +102,17 @@
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2"
       >
         <FoodCard
-          name="Coke and fanta"
-          price="€2.20"
-          image="https://toppng.com/uploads/preview/fanta-food-png-free-11667343744aaeokoh60g.png"
-          rating="5"
-          reviews="112"
-          @buy="addToCart"
-        />
-        <FoodCard
-          name="Bottle Water"
-          price="€1.90"
-          image="https://images.openfoodfacts.org/images/products/539/154/524/0026/front_en.3.full.jpg"
-          rating="5"
-          reviews="142"
-          @buy="addToCart"
-        />
+  v-for="product in allProducts"
+  :key="product.id"
+  :name="product.name"
+  :image="product.image"
+  :rating="product.rating"
+  :reviews="product.reviews"
+  :largePrice="product.price ? product.currency + ' ' + product.price.toFixed(2) : null"
+  :smallPrice="product.smallPrice ? product.currency + ' ' + product.smallPrice.toFixed(2) : null"
+  @buy="addToCart(product)"
+/>
 
-        <FoodCard
-          name="Jollof rice and chicken or beef"
-          price="€12.00"
-          image="https://images.unsplash.com/photo-1603496987674-79600a000f55?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMHJpY2V8ZW58MHx8MHx8fDA%3D"
-          rating="4"
-          reviews="123"
-        />
-
-        <FoodCard
-          name="Chicken curry sauce and white rice"
-          price="€10.00 for Large size | €7.00 for Small size"
-          image="https://cdn.pixabay.com/photo/2023/06/02/19/36/ai-generated-8036274_1280.png"
-          rating="5"
-          reviews="152"
-        />
       </div>
     </section>
 
@@ -145,22 +125,27 @@
 import FoodCard from '@/components/FoodCard.vue'
 import HeaderView from '@/components/HeaderView.vue'
 import FooterView from '@/components/FooterView.vue'
+import products from '@/data/products.json'
+
+// Example usage
+const allProducts = products
 const benefits = [
   {
     title: 'Fast Delivery',
-    description: 'The food will be delivered to your location within 0 - 40 minutes of your ordering.',
+    description:
+      'The food will be delivered to your location within 0 - 40 minutes of your ordering.',
     icon: 'fa-solid fa-truck-fast'
   },
   {
     title: 'Fresh Food',
     description:
-      'Your food will be delivered 100% fresh to your home. We do not deliver stale food.',
+      'We deliver fresh cooked food.',
     icon: 'fa-solid fa-arrows-rotate'
   },
   {
-    title: 'Free Delivery',
+    title: 'Affordable Delivery',
     description: 'Your food delivery comes with a delivery fee.',
-    icon: 'fa-solid fa-mobile-screen-button'
+    icon: 'fa-solid fa-money-bill-wave'
   }
 ]
 </script>

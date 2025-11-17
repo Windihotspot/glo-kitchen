@@ -12,28 +12,30 @@
 
     <!-- Rating -->
     <div class="flex items-center justify-center mt-1 gap-1">
-      <span
-        v-for="star in 5"
-        :key="star"
-        class="text-yellow-400"
-      >
-       <v-icon size="18" class="fa-solid fa-star text-yellow-500"></v-icon>
-
+      <span v-for="star in 5" :key="star" class="text-yellow-400">
+        <v-icon size="18" class="fa-solid fa-star text-yellow-500"></v-icon>
       </span>
 
       <span class="text-sm text-gray-500">({{ reviews }})</span>
     </div>
 
     <!-- Price -->
-    <p class="mt-2 text-md font-semibold text-gray-900">{{ price }}</p>
+    <div class="price mt-2 text-sm">
+      <!-- Case 1: Only one price (largePrice), show price only -->
+      <div v-if="largePrice && !smallPrice">
+        {{ largePrice }}
+      </div>
+
+      <!-- Case 2: Both prices exist -->
+     <div v-if="largePrice && smallPrice">
+  Large size - {{ largePrice }} | Small size - {{ smallPrice }}
+</div>
+
+
+    </div>
 
     <!-- Buy Button -->
-    <v-btn
-      class="mt-3 rounded-full text-white"
-      color="red"
-      size="small"
-      @click="$emit('buy')"
-    >
+    <v-btn class="mt-3 rounded-full text-white" color="red" size="small" @click="$emit('buy')">
       Buy Now
     </v-btn>
   </div>
@@ -43,17 +45,16 @@
 defineProps({
   name: { type: String, required: true },
   image: { type: String, required: true },
-  price: { type: [String, Number], required: true },
   rating: { type: Number, default: 5 },
-  reviews: { type: Number, default: 0 }
+  reviews: { type: Number, default: 0 },
+  largePrice: { type: String, default: null },
+  smallPrice: { type: String, default: null }
 })
-
-defineEmits(["buy"])
+defineEmits(['buy'])
 </script>
 
-
 <style scoped>
-.v-btn{
-    text-transform: none;
+.v-btn {
+  text-transform: none;
 }
 </style>
