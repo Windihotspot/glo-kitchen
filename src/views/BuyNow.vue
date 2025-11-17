@@ -7,8 +7,8 @@
     <!-- Main Content Area -->
     <div class="flex-1">
 
-      <v-container class="mx-auto md:px-10 px-4">
-        <div class="items-center flex gap-4">
+      
+        <div class="mx-auto max-w-7xl items-center flex gap-4 px-4">
           <div class="flex-1">
             <v-text-field
               rounded
@@ -35,10 +35,10 @@
             </v-icon>
           </v-btn>
         </div>
-      </v-container>
+     
 
       <!-- Products Section -->
-      <div class="mx-auto px-4 m-4 py-6">
+      <div class="mx-auto max-w-7xl px-4 m-4 py-6">
         <v-row>
           <v-col v-for="product in products" :key="product.id" cols="6">
             <v-card
@@ -115,13 +115,6 @@ const addToCart = (product) => {
 <style scoped>
 
 
-.product-card {
-  transition: transform 0.2s;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
-}
 
 .product-image {
   position: relative;

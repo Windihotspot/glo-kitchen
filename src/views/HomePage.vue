@@ -55,7 +55,7 @@
 
     <!-- Features Section -->
 
-    <div data-aos="fade-right" :data-aos-delay="index * 100" class="max-w-7xl mx-auto px-4">
+    <div data-aos="fade-right"  class="max-w-7xl mx-auto px-4">
       <div class="grid gap-8 md:grid-cols-3">
         <div
           v-for="(feature, index) in benefits"
@@ -106,7 +106,7 @@
 
       <div
         data-aos="fade-left"
-        :data-aos-delay="index * 100"
+       
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2"
       >
         <FoodCard

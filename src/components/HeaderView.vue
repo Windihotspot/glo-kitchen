@@ -1,19 +1,17 @@
 <template>
   <header
     class="mx-auto max-w-7xl text-black flex items-center justify-between px-8 py-4 relative bg-gradient-to-r from-red-100 via-red-200 to-red-100"
-   
   >
     <!-- Logo -->
-  <div class="flex items-center space-x-2">
-  <img src="../assets/glo-kitchen.jpg" alt="Glo kitchen Logo" class="w-10 h-10 rounded-full" />
+    <div class="flex items-center space-x-2">
+      <img src="../assets/glo-kitchen.jpg" alt="Glo kitchen Logo" class="w-10 h-10 rounded-full" />
 
-  <!-- Text stacked vertically -->
-  <div class="flex flex-col leading-tight">
-    <span class="font-semibold text-black text-lg">Glo Kitchen</span>
-    <span class="font-light text-black text-sm -mt-1">Intercontinental takeaway food</span>
-  </div>
-</div>
-
+      <!-- Text stacked vertically -->
+      <div class="flex flex-col justify-center">
+        <div class="font-semibold text-black text-lg">Glo Kitchen</div>
+        <div class="font-light text-black text-sm">Intercontinental takeaway food</div>
+      </div>
+    </div>
 
     <!-- Desktop Nav -->
     <nav class="hidden lg:flex items-center space-x-8 text-black font-medium">
@@ -24,16 +22,16 @@
     </nav>
 
     <!-- Desktop Buttons -->
-    <v-btn
-      to="/"
-      size="small"
-      rounded="lg"
-      class="!hidden lg:!inline-flex !px-6 !bg-red-500 hover:!bg-red-600 text-white"
-    >
-      Book an Order
-    </v-btn>
-
-    
+    <router-link to="/buy-now" class="block w-full sm:w-auto">
+      <v-btn
+        to="/"
+        size="small"
+        rounded="lg"
+        class="!hidden lg:!inline-flex !px-6 !bg-red-500 hover:!bg-red-600 text-white"
+      >
+        Book an Order
+      </v-btn>
+    </router-link>
 
     <!-- Mobile Hamburger -->
     <button class="lg:hidden text-black" @click="showMenu = !showMenu">
@@ -62,29 +60,26 @@
 
     <!-- Mobile Menu -->
     <div
-    data-aos="fade-down"
-    
+      data-aos="fade-down"
       v-if="showMenu"
       class="absolute m-2 top-full left-0 w-full bg-white border-t shadow-md lg:hidden z-50"
     >
       <nav class="flex flex-col space-y-4 p-4 text-gray-800 font-medium">
+        <router-link to="/" class="mobile-link">Home</router-link>
+        <router-link to="/" class="mobile-link">Services</router-link>
+        <router-link to="/" class="mobile-link">About us</router-link>
+        <router-link to="/" class="mobile-link">Contact</router-link>
 
-        <router-link to="/"  class="mobile-link">Home</router-link>
-        <router-link to="/"  class="mobile-link">Services</router-link>
-        <router-link to="/"  class="mobile-link">About us</router-link>
-        <router-link to="/"  class="mobile-link">Contact</router-link>
-
-        <v-btn
-          size="large"
-          rounded="lg"
-          class="!bg-red-500 hover:!bg-red-600 text-white px-6"
-          @click="showMenu = false"
+        <router-link to="/buy-now" class="block w-full sm:w-auto">
+          <v-btn
+            size="large"
+            rounded="lg"
+            class="!bg-red-500 hover:!bg-red-600 text-white px-6"
+            @click="showMenu = false"
+          >
+            Book an order
+          </v-btn></router-link
         >
-           Book an order
-        </v-btn>
-
-    
-
       </nav>
     </div>
   </header>
@@ -99,11 +94,31 @@ const showMobileDropdown = ref(false)
 const showMenu = ref(false)
 
 const services = [
-  { title: 'Bank Statement Analysis', description: 'Advanced bank statement analysis solutions', path: '/BankStatementAnalysis' },
-  { title: 'Loan Origination', description: 'Advanced loan origination solutions', path: '/coreservices#loan-origination' },
-  { title: 'Credit Underwriting', description: 'Advanced credit underwriting solutions', path: '/coreservices#credit-underwriting' },
-  { title: 'ID & Credit Search', description: 'Advanced id & credit search solutions', path: '/coreservices#id-credit-search' },
-  { title: 'Custom Scorecard', description: 'Advanced custom scorecard solutions', path: '/coreservices#custom-scorecard' }
+  {
+    title: 'Bank Statement Analysis',
+    description: 'Advanced bank statement analysis solutions',
+    path: '/BankStatementAnalysis'
+  },
+  {
+    title: 'Loan Origination',
+    description: 'Advanced loan origination solutions',
+    path: '/coreservices#loan-origination'
+  },
+  {
+    title: 'Credit Underwriting',
+    description: 'Advanced credit underwriting solutions',
+    path: '/coreservices#credit-underwriting'
+  },
+  {
+    title: 'ID & Credit Search',
+    description: 'Advanced id & credit search solutions',
+    path: '/coreservices#id-credit-search'
+  },
+  {
+    title: 'Custom Scorecard',
+    description: 'Advanced custom scorecard solutions',
+    path: '/coreservices#custom-scorecard'
+  }
 ]
 
 const dropdownRef = ref(null)
