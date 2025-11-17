@@ -127,8 +127,8 @@
         />
 
         <FoodCard
-          name="Chicken curry sauce and whie rice"
-          price="3.63"
+          name="Chicken curry sauce and white rice"
+          price="€10.00 for Large size | €7.00 for Small size"
           image="https://cdn.pixabay.com/photo/2023/06/02/19/36/ai-generated-8036274_1280.png"
           rating="5"
           reviews="152"
@@ -148,7 +148,7 @@ import FooterView from '@/components/FooterView.vue'
 const benefits = [
   {
     title: 'Fast Delivery',
-    description: 'The food will be delivered to your home within 1-2 hours of your ordering.',
+    description: 'The food will be delivered to your home within 0 - 40 minutes of your ordering.',
     icon: 'fa-solid fa-truck-fast'
   },
   {
@@ -159,7 +159,7 @@ const benefits = [
   },
   {
     title: 'Free Delivery',
-    description: 'Your food delivery is absolutely free. No cost, just order and enjoy.',
+    description: 'Your food delivery comes with a delivery fee.',
     icon: 'fa-solid fa-mobile-screen-button'
   }
 ]

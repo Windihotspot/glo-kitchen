@@ -8,7 +8,7 @@
     </div>
 
     <!-- Name -->
-    <h3 class="font-semibold text-lg text-gray-800">{{ name }}</h3>
+    <h3 class="font-semibold text-lg">{{ name }}</h3>
 
     <!-- Rating -->
     <div class="flex items-center justify-center mt-1 gap-1">
@@ -25,7 +25,7 @@
     </div>
 
     <!-- Price -->
-    <p class="mt-2 text-lg font-bold text-gray-900">{{ price }}</p>
+    <p class="mt-2 text-md font-semibold text-gray-900">{{ price }}</p>
 
     <!-- Buy Button -->
     <v-btn
