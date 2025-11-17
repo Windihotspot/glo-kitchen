@@ -148,7 +148,7 @@ import FooterView from '@/components/FooterView.vue'
 const benefits = [
   {
     title: 'Fast Delivery',
-    description: 'The food will be delivered to your home within 0 - 40 minutes of your ordering.',
+    description: 'The food will be delivered to your location within 0 - 40 minutes of your ordering.',
     icon: 'fa-solid fa-truck-fast'
   },
   {
