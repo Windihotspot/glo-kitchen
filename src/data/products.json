@@ -44,6 +44,7 @@
     "id": 3,
     "name": "Fried rice and chicken or beef",
     "price": 12.00,
+    "smallPrice": 7.00,
     "currency": "€",
     "image": "https://cdn.pixabay.com/photo/2021/06/02/01/36/rice-6303122_640.jpg",
     "rating": 4,
