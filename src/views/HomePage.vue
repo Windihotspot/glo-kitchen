@@ -20,9 +20,17 @@
           <div
             class="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8 md:justify-start md:items-start"
           >
-            <v-btn color="red" class="text-white px-6 py-3 w-auto" rounded="xl" size="large">
-              Buy Now
-            </v-btn>
+            <router-link to="/buy-now" class="block w-full sm:w-auto">
+  <v-btn
+    color="red"
+    class="text-white py-3 w-full sm:w-auto"
+    rounded="xl"
+    size="large"
+  >
+    Buy Now
+  </v-btn>
+</router-link>
+
           </div>
         </div>
 
@@ -102,17 +110,18 @@
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2"
       >
         <FoodCard
-  v-for="product in allProducts"
-  :key="product.id"
-  :name="product.name"
-  :image="product.image"
-  :rating="product.rating"
-  :reviews="product.reviews"
-  :largePrice="product.price ? product.currency + ' ' + product.price.toFixed(2) : null"
-  :smallPrice="product.smallPrice ? product.currency + ' ' + product.smallPrice.toFixed(2) : null"
-  @buy="addToCart(product)"
-/>
-
+          v-for="product in allProducts"
+          :key="product.id"
+          :name="product.name"
+          :image="product.image"
+          :rating="product.rating"
+          :reviews="product.reviews"
+          :largePrice="product.price ? product.currency + ' ' + product.price.toFixed(2) : null"
+          :smallPrice="
+            product.smallPrice ? product.currency + ' ' + product.smallPrice.toFixed(2) : null
+          "
+          @buy="addToCart(product)"
+        />
       </div>
     </section>
 
@@ -138,8 +147,7 @@ const benefits = [
   },
   {
     title: 'Fresh Food',
-    description:
-      'We deliver fresh cooked food.',
+    description: 'We deliver fresh cooked food.',
     icon: 'fa-solid fa-arrows-rotate'
   },
   {

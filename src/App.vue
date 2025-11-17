@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import { useAuthStore } from '../src/stores/auth.js'
-
-const authStore = useAuthStore()
-authStore.init() 
 </script>
 
 <template>
-  <main class="text-neutral-800">
+  <main class="min-h-screen text-neutral-800 bg-gradient-to-r from-red-100 via-red-200 to-red-100">
     <RouterView />
   </main>
 </template>
@@ -19,7 +15,4 @@ authStore.init()
 .v-application {
   font-family: 'Sora', sans-serif;
 }
-
 </style>
-
-

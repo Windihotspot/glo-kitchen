@@ -63,7 +63,7 @@
     <!-- Mobile Menu -->
     <div
     data-aos="fade-down"
-    :data-aos-delay="index * 100"
+    
       v-if="showMenu"
       class="absolute m-2 top-full left-0 w-full bg-white border-t shadow-md lg:hidden z-50"
     >
