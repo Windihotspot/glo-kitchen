@@ -20,17 +20,15 @@
           <div
             class="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-8 md:justify-start md:items-start"
           >
-            <router-link to="/buy-now" class="block w-full sm:w-auto">
-  <v-btn
-    color="red"
-    class="text-white py-3 w-full sm:w-auto"
-    rounded="xl"
-    size="large"
-  >
-    Buy Now
-  </v-btn>
-</router-link>
-
+            <a
+              href="https://wa.me/353899890446?text=Hello%20I%20would%20like%20to%20book%20an%20order"
+              target="_blank"
+              class="block w-full sm:w-auto"
+            >
+              <v-btn color="red" class="text-white py-3 w-full sm:w-auto" rounded="xl" size="large">
+                Buy Now
+              </v-btn>
+            </a>
           </div>
         </div>
 
@@ -55,7 +53,7 @@
 
     <!-- Features Section -->
 
-    <div data-aos="fade-right"  class="max-w-7xl mx-auto px-4">
+    <div data-aos="fade-right" class="max-w-7xl mx-auto px-4">
       <div class="grid gap-8 md:grid-cols-3">
         <div
           v-for="(feature, index) in benefits"
@@ -104,11 +102,7 @@
         </v-btn> -->
       </div>
 
-      <div
-        data-aos="fade-left"
-       
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2"
-      >
+      <div data-aos="fade-left" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-2">
         <FoodCard
           v-for="product in allProducts"
           :key="product.id"

@@ -22,16 +22,19 @@
     </nav>
 
     <!-- Desktop Buttons -->
-    <router-link to="/buy-now" class="block w-full sm:w-auto">
+    <a
+      href="https://wa.me/353899890446?text=Hello%20I%20would%20like%20to%20book%20an%20order"
+      target="_blank"
+      class="block w-full sm:w-auto"
+    >
       <v-btn
-        to="/"
         size="small"
         rounded="lg"
         class="!hidden lg:!inline-flex !px-6 !bg-red-500 hover:!bg-red-600 text-white"
       >
         Book an Order
       </v-btn>
-    </router-link>
+    </a>
 
     <!-- Mobile Hamburger -->
     <button class="lg:hidden text-black" @click="showMenu = !showMenu">
@@ -70,7 +73,11 @@
         <router-link to="/" class="mobile-link">About us</router-link>
         <router-link to="/" class="mobile-link">Contact</router-link>
 
-        <router-link to="/buy-now" class="block w-full sm:w-auto">
+        <a
+          href="https://wa.me/353899890446?text=Hello%20I%20would%20like%20to%20book%20an%20order"
+          target="_blank"
+          class="block w-full sm:w-auto"
+        >
           <v-btn
             size="large"
             rounded="lg"
@@ -78,8 +85,8 @@
             @click="showMenu = false"
           >
             Book an order
-          </v-btn></router-link
-        >
+          </v-btn>
+        </a>
       </nav>
     </div>
   </header>
