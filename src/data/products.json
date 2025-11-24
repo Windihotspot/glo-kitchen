@@ -25,7 +25,7 @@
     "price": 12.00,
     "smallPrice": 7.00,
     "currency": "€",
-    "image": "https://images.unsplash.com/photo-1603496987674-79600a000f55?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2hpY2tlbiUyMHJpY2V8ZW58MHx8MHx8fDA%3D",
+    "image": "https://images.unsplash.com/photo-1603496987674-79600a000f55?fm=jpg&q=60&w=3000",
     "rating": 4,
     "reviews": 123,
     "category": "meals"
@@ -41,7 +41,7 @@
     "reviews": 152,
     "category": "meals"
   },
-   {
+  {
     "id": 5,
     "name": "Fried rice and chicken or beef",
     "price": 12.00,
@@ -51,75 +51,73 @@
     "rating": 4,
     "reviews": 123,
     "category": "meals"
-  }
-  ,
-   {
+  },
+  {
     "id": 6,
     "name": "Egusi/vegetable soup with pounded yam",
     "price": 12.00,
     "currency": "€",
-    "image": "/src/assets/egusi with pounde yam.jpg",
+    "image": "/foods/egusi-with-pounded-yam.jpg",
     "rating": 4,
     "reviews": 123,
     "category": "meals"
   },
-   {
+  {
     "id": 7,
     "name": "Grilled tilapia fish with fried plantain with sauce",
     "price": 15.00,
     "currency": "€",
-    "image": "/src/assets/Grilled tilapia fish with fried plantain with sauce.jpg",
+    "image": "/foods/grilled-tilapia-plantain.jpg",
     "rating": 4,
     "reviews": 300,
     "category": "meals"
   },
-   
-   {
+  {
     "id": 8,
     "name": "Grilled wedges with fried chicken",
     "price": 7.50,
     "currency": "€",
-    "image": "/src/assets/Grilled wedges with fried chicken.jpg",
+    "image": "/foods/grilled-wedges-chicken.jpg",
     "rating": 4,
     "reviews": 200,
     "category": "meals"
   },
-   {
+  {
     "id": 9,
     "name": "Three pieces of Akara/Moimoi",
     "price": 5.00,
     "currency": "€",
-    "image": "/src/assets/Akara moimoi.jpg",
+    "image": "/foods/akara-moimoi.jpg",
     "rating": 4,
     "reviews": 200,
     "category": "meals"
   },
-   {
+  {
     "id": 10,
     "name": "Beans and plantain",
     "price": 10.00,
     "currency": "€",
-    "image": "/src/assets/Beans and plantain.jpg",
+    "image": "/foods/beans-plantain.jpg",
     "rating": 4,
     "reviews": 200,
     "category": "meals"
   },
-   {
+  {
     "id": 11,
     "name": "Fried goat meat with sauce",
     "price": 15.00,
     "currency": "€",
-    "image": "/src/assets/Fried goat meat with sauce.png",
+    "image": "/foods/fried-goat-meat.png",
     "rating": 4,
     "reviews": 200,
     "category": "meals"
   },
-   {
+  {
     "id": 12,
-    "name": "Two pieces of fried chicken and grilled wedges ",
+    "name": "Two pieces of fried chicken and grilled wedges",
     "price": 7.50,
     "currency": "€",
-    "image": "/src/assets/grilled chicken with wedges.jpg",
+    "image": "/foods/grilled-chicken-wedges.jpg",
     "rating": 4,
     "reviews": 200,
     "category": "meals"
