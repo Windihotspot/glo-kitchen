@@ -33,9 +33,7 @@ onMounted(() => {
 
     <!-- WhatsApp Floating Button -->
     <a href="https://wa.me/353899890446" target="_blank" class="fixed bottom-5 right-5">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14" viewBox="0 0 48 48">
-        <path fill="#25D366" d="M... (shortened for clarity)"></path>
-      </svg>
+      <img src="/icons8-whatsapp-48.png" alt="">
     </a>
   </main>
 </template>
