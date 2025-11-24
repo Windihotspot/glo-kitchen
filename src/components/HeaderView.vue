@@ -9,7 +9,7 @@
       <!-- Text stacked vertically -->
       <div class="flex flex-col justify-center">
         <div class="font-semibold text-black text-lg">Glo Kitchen</div>
-        <div class="font-light text-black text-sm">Intercontinental takeaway food</div>
+        <div class="font-light text-black text-sm">Intercontinental takeaway foods</div>
       </div>
     </div>
 

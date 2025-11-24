@@ -42,7 +42,7 @@
     "category": "meals"
   },
    {
-    "id": 3,
+    "id": 5,
     "name": "Fried rice and chicken or beef",
     "price": 12.00,
     "smallPrice": 7.00,
@@ -50,6 +50,78 @@
     "image": "https://cdn.pixabay.com/photo/2021/06/02/01/36/rice-6303122_640.jpg",
     "rating": 4,
     "reviews": 123,
+    "category": "meals"
+  }
+  ,
+   {
+    "id": 6,
+    "name": "Egusi/vegetable soup with pounded yam",
+    "price": 12.00,
+    "currency": "€",
+    "image": "/src/assets/Egusi_soup_with_ponmo_and_beef.jpg",
+    "rating": 4,
+    "reviews": 123,
+    "category": "meals"
+  },
+   {
+    "id": 7,
+    "name": "Grilled tilapia fish with fried plantain with sauce",
+    "price": 15.00,
+    "currency": "€",
+    "image": "/src/assets/Grilled tilapia fish with fried plantain with sauce.jpg",
+    "rating": 4,
+    "reviews": 300,
+    "category": "meals"
+  },
+   
+   {
+    "id": 8,
+    "name": "Grilled wedges with fried chicken",
+    "price": 7.50,
+    "currency": "€",
+    "image": "/src/assets/Grilled wedges with fried chicken.jpg",
+    "rating": 4,
+    "reviews": 200,
+    "category": "meals"
+  },
+   {
+    "id": 9,
+    "name": "Three pieces of Akara/Moimoi",
+    "price": 5.00,
+    "currency": "€",
+    "image": "/src/assets/Akara moimoi.jpg",
+    "rating": 4,
+    "reviews": 200,
+    "category": "meals"
+  },
+   {
+    "id": 10,
+    "name": "Beans and plantain",
+    "price": 10.00,
+    "currency": "€",
+    "image": "/src/assets/Beans and plantain.jpg",
+    "rating": 4,
+    "reviews": 200,
+    "category": "meals"
+  },
+   {
+    "id": 11,
+    "name": "Fried goat meat with sauce",
+    "price": 15.00,
+    "currency": "€",
+    "image": "/src/assets/Fried goat meat with sauce.png",
+    "rating": 4,
+    "reviews": 200,
+    "category": "meals"
+  },
+   {
+    "id": 12,
+    "name": "Two pieces of fried chicken and grilled wedges ",
+    "price": 7.50,
+    "currency": "€",
+    "image": "/src/assets/grilled chicken with wedges.jpg",
+    "rating": 4,
+    "reviews": 200,
     "category": "meals"
   }
 ]
