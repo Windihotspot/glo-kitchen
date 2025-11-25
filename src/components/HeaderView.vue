@@ -1,16 +1,16 @@
 <template>
   <header
-    class="mx-auto max-w-7xl text-black flex items-center justify-between px-8 py-4 relative bg-gradient-to-r from-red-100 via-red-200 to-red-100"
+    class="mx-auto max-w-7xl text-black flex items-center justify-between px-8 py-4 relative bg-white shadow-sm border-b"
   >
     <!-- Logo -->
-    <div class="flex items-center space-x-2">
-      <img src="../assets/glo-kitchen.jpg" alt="Glo kitchen Logo" class="w-10 h-10 rounded-full" />
-
+    <div class="items-center ">
+      <img src="../assets/glo-kitchen-logo.jpg" alt="Glo kitchen Logo" class="w-70 h-15" />
+ 
       <!-- Text stacked vertically -->
-      <div class="flex flex-col justify-center">
+      <!-- <div class="flex flex-col justify-center">
         <div class="font-semibold text-black text-lg">Glo Kitchen</div>
         <div class="font-light text-black text-sm">Intercontinental takeaway foods</div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Desktop Nav -->

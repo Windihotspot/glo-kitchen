@@ -1,7 +1,8 @@
 <template>
+  <HeaderView></HeaderView>
   <div class="bg-gradient-to-r from-red-100 via-red-200 to-red-100 min-h-screen">
     <!-- Navbar -->
-    <HeaderView></HeaderView>
+    
 
     <!-- Hero Section -->
     <section data-aos="fade-up" class="max-w-7xl mx-auto text-center px-6 py-16 md:px-10 md:py-20">

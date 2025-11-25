@@ -20,7 +20,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <main class="min-h-screen text-neutral-800 bg-gradient-to-r from-red-100 via-red-200 to-red-100">
+  <main class="min-h-screen text-neutral-800">
     <RouterView />
 
     <!-- Tooltip -->
